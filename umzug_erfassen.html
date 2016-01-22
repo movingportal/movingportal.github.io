@@ -146,7 +146,7 @@
 			<div class="form-group has-feedback"
 				data-ng-class="{'has-error': umzugErfassen.fromStreet.$invalid, 'has-success':  !umzugErfassen.fromStreet.$invalid}">
 				<label for="fromStreet">Straße</label> <input type="text"
-				class="form-control" id="fromStreet" name="fromStreet" data-ng-minlength="4" data-ng-minlength="35"
+				class="form-control" id="fromStreet" name="fromStreet" data-ng-minlength="4" data-ng-maxlength="35"
 				placeholder="Straße" data-ng-model="Umzug.Von.Strasse"
 				data-ng-required="true"><span
 					class="glyphicon glyphicon-ok form-control-feedback"
@@ -174,7 +174,7 @@
 	<div class="form-group has-feedback"
 		data-ng-class="{'has-error': umzugErfassen.fromCity.$invalid, 'has-success':  !umzugErfassen.fromCity.$invalid}">
 		<label for="fromCity">Stadt</label> <input type="text"
-		class="form-control" id="fromCity" name="fromCity" data-ng-minlength="2" data-ng-minlength="35"
+		class="form-control" id="fromCity" name="fromCity" data-ng-minlength="2" data-ng-maxlength="35"
 		placeholder="Stadt" data-ng-model="Umzug.Von.Stadt"
 		data-ng-required="true"><span
 			class="glyphicon glyphicon-ok form-control-feedback"
@@ -200,7 +200,7 @@
 <div class="form-group has-feedback"
 	data-ng-class="{'has-error': umzugErfassen.toStreet.$invalid, 'has-success':  !umzugErfassen.toStreet.$invalid}">
 	<label for="toStreet">Straße</label> <input type="text"
-	class="form-control" id="toStreet" name="toStreet" data-ng-minlength="4" data-ng-minlength="35"
+	class="form-control" id="toStreet" name="toStreet" data-ng-minlength="4" data-ng-maxlength="35"
 	placeholder="Straße" data-ng-model="Umzug.Nach.Strasse"
 	data-ng-required="true"><span
 		class="glyphicon glyphicon-ok form-control-feedback"
@@ -227,7 +227,7 @@ data-ng-if="umzugErfassen.toZip.$invalid"></span>
 <div class="form-group has-feedback"
 data-ng-class="{'has-error': umzugErfassen.toCity.$invalid, 'has-success':  !umzugErfassen.toCity.$invalid}">
 <label for="toCity">Stadt</label> <input type="text"
-class="form-control" id="toCity" name="toCity" data-ng-minlength="2" data-ng-minlength="35"
+class="form-control" id="toCity" name="toCity" data-ng-minlength="2" data-ng-maxlength="35"
 placeholder="Stadt" data-ng-model="Umzug.Nach.Stadt"
 data-ng-required="true"><span
 class="glyphicon glyphicon-ok form-control-feedback"
