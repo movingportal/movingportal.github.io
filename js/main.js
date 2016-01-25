@@ -1,6 +1,16 @@
-angular.module('app', []).controller('handleController', ['$scope',
+angular.module('app', ['ui.bootstrap']).controller('handleController', ['$scope',
     function($scope) {
         Parse.initialize("fe50rfKZvPJARdcqFrDRRs77qaudvQGPU5JyMd0L", "Er5TBVwLJAOuSOaL6kjslLZTgVD6pSzNqWGGcEAe");
+        $scope.Umzug = {
+            Dienstleistungen: {
+                Einpacken: "NEIN",
+                Abbau: "NEIN",
+                Transport: "JA",
+                Aufbau: "NEIN",
+                Auspacken: "NEIN"
+            }
+        };
+
         $scope.create = function(Umzug) {
             Umzug.site = "pickito.de";
             Umzug.subject = "Neuer Umzug";
