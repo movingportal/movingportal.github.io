@@ -69,6 +69,14 @@
         </div>
         <div class="row">
             <div class="col-md-6">
+                <div class="form-group has-feedback" data-ng-class="{'has-error': umzugErfassen.name.$invalid, 'has-success':  !umzugErfassen.name.$invalid}">
+                    <label for="name">Dein Name</label>
+                    <input type="text" class="form-control" id="name" name="name" placeholder="Name" data-ng-minlength="4" data-ng-maxlength="35" data-ng-model="Umzug.Name" data-ng-required="true"><span class="glyphicon glyphicon-ok form-control-feedback" data-ng-if="!umzugErfassen.name.$invalid"></span><span class="glyphicon glyphicon-remove form-control-feedback" data-ng-if="umzugErfassen.name.$invalid"></span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
                 <div class="form-group has-feedback" data-ng-class="{'has-error': umzugErfassen.email.$invalid, 'has-success':  !umzugErfassen.email.$invalid}">
                     <label for="email">Deine E-Mail-Adresse</label>
                     <input type="email" class="form-control" id="email" name="email" placeholder="EMail" data-ng-model="Umzug.Empfaenger" data-ng-required="true"><span class="glyphicon glyphicon-ok form-control-feedback" data-ng-if="!umzugErfassen.email.$invalid"></span><span class="glyphicon glyphicon-remove form-control-feedback" data-ng-if="umzugErfassen.email.$invalid"></span>
@@ -104,7 +112,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-8">
                 <label for="services">Leistungen</label>
                 <br>
                 <div class="btn-group">

@@ -277,7 +277,7 @@ a:after {
 #page-content {
     margin-top: 70px;
     margin-bottom: 100px;
-    min-height:  790px;
+    min-height: 790px;
 }
 
 
@@ -488,6 +488,10 @@ a:after {
 
 .service-content p:last-child {
     margin: 0;
+}
+
+.problem {
+    font-size: 20px;
 }
 
 
