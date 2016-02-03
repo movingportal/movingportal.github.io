@@ -53,12 +53,12 @@
 	<div id="page-content">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-10 col-lg-offset-1">
+				<div class="col-md-8 col-md-offset-2">
 					<h1>UMZUG ERFASSEN</h1>
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-10 col-lg-offset-1">
+				<div class="col-md-8 col-md-offset-2">
 					
 <div data-ng-app="app" data-ng-controller="handleController">
     <form role="form" novalidate="novalidate" name="umzugErfassen">
@@ -112,7 +112,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-8">
+            <div class="col-md-12">
                 <label for="services">Leistungen</label>
                 <br>
                 <div class="btn-group">
@@ -149,13 +149,13 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-4">
+                    <div class="col-md-5">
                         <div class="form-group has-feedback" data-ng-class="{'has-error': umzugErfassen.fromZip.$invalid, 'has-success':  !umzugErfassen.fromZip.$invalid}">
                             <label for="fromZip">PLZ</label>
                             <input type="text" class="form-control" id="fromZip" name="fromZip" data-ng-pattern="/^[0-9]{5}$/" placeholder="PLZ" data-ng-model="Umzug.Von.Plz" data-ng-required="true"><span class="glyphicon glyphicon-ok form-control-feedback" data-ng-if="!umzugErfassen.fromZip.$invalid"></span><span class="glyphicon glyphicon-remove form-control-feedback" data-ng-if="umzugErfassen.fromZip.$invalid"></span>
                         </div>
                     </div>
-                    <div class="col-md-8">
+                    <div class="col-md-7">
                         <div class="form-group has-feedback" data-ng-class="{'has-error': umzugErfassen.fromCity.$invalid, 'has-success':  !umzugErfassen.fromCity.$invalid}">
                             <label for="fromCity">Stadt</label>
                             <input type="text" class="form-control" id="fromCity" name="fromCity" data-ng-minlength="2" data-ng-maxlength="35" placeholder="Stadt" data-ng-model="Umzug.Von.Stadt" data-ng-required="true"><span class="glyphicon glyphicon-ok form-control-feedback" data-ng-if="!umzugErfassen.fromCity.$invalid"></span><span class="glyphicon glyphicon-remove form-control-feedback" data-ng-if="umzugErfassen.fromCity.$invalid"></span>
@@ -182,13 +182,13 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-4">
+                    <div class="col-md-5">
                         <div class="form-group has-feedback" data-ng-class="{'has-error': umzugErfassen.toZip.$invalid, 'has-success':  !umzugErfassen.toZip.$invalid}">
                             <label for="toZip">PLZ</label>
                             <input type="text" class="form-control" id="toZip" name="toZip" data-ng-pattern="/^[0-9]{5}$/" placeholder="PLZ" data-ng-model="Umzug.Nach.Plz" data-ng-required="true"><span class="glyphicon glyphicon-ok form-control-feedback" data-ng-if="!umzugErfassen.toZip.$invalid"></span><span class="glyphicon glyphicon-remove form-control-feedback" data-ng-if="umzugErfassen.toZip.$invalid"></span>
                         </div>
                     </div>
-                    <div class="col-md-8">
+                    <div class="col-md-7">
                         <div class="form-group has-feedback" data-ng-class="{'has-error': umzugErfassen.toCity.$invalid, 'has-success':  !umzugErfassen.toCity.$invalid}">
                             <label for="toCity">Stadt</label>
                             <input type="text" class="form-control" id="toCity" name="toCity" data-ng-minlength="2" data-ng-maxlength="35" placeholder="Stadt" data-ng-model="Umzug.Nach.Stadt" data-ng-required="true"><span class="glyphicon glyphicon-ok form-control-feedback" data-ng-if="!umzugErfassen.toCity.$invalid"></span><span class="glyphicon glyphicon-remove form-control-feedback" data-ng-if="umzugErfassen.toCity.$invalid"></span>
